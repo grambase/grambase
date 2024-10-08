@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="1080px" viewBox="0 0 1600 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Large@1x</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#80B1FB" offset="0%"></stop>
+            <stop stop-color="#E2EEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#80B1FB" offset="0%"></stop>
+            <stop stop-color="#E2EEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#80B1FB" offset="0%"></stop>
+            <stop stop-color="#E2EEFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Large" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="url(#linearGradient-1)" transform="translate(1059.2965, 383.2758) rotate(49) translate(-1059.2965, -383.2758)" points="1132.66237 6.86533348 792.124799 436.705319 1326.46823 759.686235"></polygon>
+        <polygon id="Path-Copy" fill="url(#linearGradient-2)" transform="translate(145.763, 956.4084) rotate(34) translate(-145.763, -956.4084)" points="303.743284 720.584569 -36.7942865 1150.42455 328.320276 1192.23228"></polygon>
+        <polygon id="Path-Copy-2" fill="url(#linearGradient-3)" transform="translate(190.763, 102.4084) rotate(125) translate(-190.763, -102.4084)" points="389.79897 -194.700989 -39.2370053 346.845182 420.762995 399.517841"></polygon>
+    </g>
+</svg>
