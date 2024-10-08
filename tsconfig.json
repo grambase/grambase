@@ -40,7 +40,8 @@
     "app/**/*.jsx",
     ".next/types/**/*.ts",
     "dist/gramod/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    "global.d.ts"
   ],
   "exclude": [
     "node_modules",
