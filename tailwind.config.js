@@ -1,23 +1,22 @@
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
 const { join } = require('path');
-const { nextui } = require('@nextui-org/react');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: [
     join(
       __dirname,
       '{src,pages,components,app,lib,tools}/**/*!(*.stories|*.spec).{ts,tsx,html}',
     ),
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     ...createGlobPatternsForDependencies(__dirname),
   ],
   theme: {
     container: {
-      center: true,
+      center: 'true',
       padding: '1rem',
       screens: {
-        '2xl': '820px',
+        '2xl': '1100px',
       },
     },
     extend: {
@@ -55,38 +54,20 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        warning: {
-          DEFAULT: 'hsl(var(--warning))',
-          foreground: 'hsl(var(--warning-foreground))',
-        },
-        success: {
-          DEFAULT: 'hsl(var(--success))',
-          foreground: 'hsl(var(--success-foreground))',
-        },
-        danger: {
-          DEFAULT: 'hsl(var(--danger))',
-          foreground: 'hsl(var(--danger-foreground))',
+        chart: {
+          1: 'hsl(var(--chart-1))',
+          2: 'hsl(var(--chart-2))',
+          3: 'hsl(var(--chart-3))',
+          4: 'hsl(var(--chart-4))',
+          5: 'hsl(var(--chart-5))',
         },
       },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
     },
   },
-  plugins: [
-    nextui({
-      themes: {
-        light: {
-          colors: {
-            primary: {
-              foreground: '#FFFFFF',
-              DEFAULT: '#2C2F40',
-            },
-          },
-        },
-      },
-    }),
-  ],
+  plugins: [require('tailwindcss-animate')],
 };

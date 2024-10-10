@@ -30,7 +30,7 @@
     ],
     "types": ["jest", "node"],
     "paths": {
-      "#/*": ["*"]
+      "#/*": ["./*"]
     }
   },
   "include": [
@@ -38,10 +38,16 @@
     "app/**/*.tsx",
     "app/**/*.js",
     "app/**/*.jsx",
+    "lib/**/*.ts",
+    "db/**/*.ts",
     ".next/types/**/*.ts",
-    "dist/gramod/.next/types/**/*.ts",
+    "dist/grambase/.next/types/**/*.ts",
     "next-env.d.ts",
-    "global.d.ts"
+    "global.d.ts",
+    "env.ts",
+    "middleware.ts",
+    "constants.ts",
+    "lib/trpc",
   ],
   "exclude": [
     "node_modules",
@@ -49,6 +55,6 @@
     "jest.config.ts",
     "app/**/*.spec.ts",
     "app/**/*.test.ts",
-    "dist/gramod/**/*"
+    "dist/grambase/**/*"
   ]
 }

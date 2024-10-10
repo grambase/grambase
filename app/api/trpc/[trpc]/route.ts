@@ -1,4 +1,4 @@
-import { appRouter } from '#/trpc/init';
+import { appRouter } from '#/lib/trpc/init';
 
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
 

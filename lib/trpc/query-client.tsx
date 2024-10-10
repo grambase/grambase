@@ -1,4 +1,5 @@
 import {
+  QueryCache,
   QueryClient,
   defaultShouldDehydrateQuery,
 } from '@tanstack/react-query';
