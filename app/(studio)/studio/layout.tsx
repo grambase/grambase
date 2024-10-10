@@ -2,14 +2,14 @@
 
 import { Card } from '#/components/ui/card';
 import { Tabs, TabsList, TabsTrigger } from '#/components/ui/tabs';
-import { menuItems } from '#/constants';
+import { menuItems } from '#/lib/constants';
 
 import React from 'react';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import Sidebar from '../../components/sidebar';
+import Sidebar from '../../../components/sidebar';
 
 function Layout({ children }: { children: React.ReactNode }) {
   const path = usePathname();

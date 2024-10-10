@@ -1,10 +1,10 @@
 'use client';
 
-import MessageAnalytics from '#/app/components/analytics/messages';
-import ChatStatsRow from '#/app/components/chat-stats-row';
-import ChatUserList from '#/app/components/chat-users-list';
+import MessageAnalytics from '#/components/analytics/messages';
+import ChatStatsRow from '#/components/chat-stats-row';
+import ChatUserList from '#/components/chat-users-list';
 
-import React, { useRef } from 'react';
+import React from 'react';
 
 export const description = 'A stacked area chart';
 

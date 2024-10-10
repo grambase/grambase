@@ -39,15 +39,13 @@
     "app/**/*.js",
     "app/**/*.jsx",
     "lib/**/*.ts",
-    "db/**/*.ts",
+    "lib/db/**/*.ts",
     ".next/types/**/*.ts",
     "dist/grambase/.next/types/**/*.ts",
     "next-env.d.ts",
-    "global.d.ts",
-    "env.ts",
+    "globals.d.ts",
     "middleware.ts",
-    "constants.ts",
-    "lib/trpc",
+    "components"
   ],
   "exclude": [
     "node_modules",

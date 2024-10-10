@@ -1,6 +1,11 @@
-import authConfig from '#/auth.config';
-import { db } from '#/db/drizzle';
-import { accounts, sessions, users, verificationTokens } from '#/db/schemas';
+import authConfig from '#/lib/auth.config';
+import { db } from '#/lib/db/drizzle';
+import {
+  accounts,
+  sessions,
+  users,
+  verificationTokens,
+} from '#/lib/db/schemas';
 
 import { DrizzleAdapter } from '@auth/drizzle-adapter';
 import NextAuth from 'next-auth';

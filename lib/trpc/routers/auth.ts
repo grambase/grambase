@@ -1,5 +1,5 @@
-import { db } from '#/db/drizzle';
-import { type NewUser, users } from '#/db/schemas';
+import { db } from '#/lib/db/drizzle';
+import { type NewUser, users } from '#/lib/db/schemas';
 
 import { hash } from 'bcryptjs';
 import { eq } from 'drizzle-orm';
