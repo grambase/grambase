@@ -4,7 +4,6 @@ import { Button } from '#/components/ui/button';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -14,21 +13,28 @@ import { Input } from '#/components/ui/input';
 import { Label } from '#/components/ui/label';
 
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
 
 import Link from 'next/link';
+import { toast } from 'sonner';
 
-import { signInWithCredentials, signInWithGithub } from './action';
+import SocialLogin from '../_/social-login';
+import { signInWithCredentials } from './action';
 
 function Page() {
+  const [loading, setLoading] = React.useState(false);
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const email = formData.get('email') as string;
     const password = formData.get('password') as string;
 
-    await signInWithCredentials(email, password);
+    setLoading(true);
+
+    await signInWithCredentials(email, password).catch(() => {
+      toast.error('Invalid credentials');
+      setLoading(false);
+    });
   }
 
   return (
@@ -39,7 +45,6 @@ function Page() {
       <Card className="w-[26rem] p-4">
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
-          <CardDescription>Sign in to your account</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
@@ -67,7 +72,12 @@ function Page() {
               Forgot password?
             </Link>
           </div>
-          <Button color="primary" type="submit" className="w-full">
+          <Button
+            color="primary"
+            type="submit"
+            className="w-full"
+            isLoading={loading}
+          >
             Login
           </Button>
           <div className="flex items-center gap-4 mx-4 pt-2">
@@ -78,26 +88,11 @@ function Page() {
         </CardContent>
 
         <CardFooter className="gap-4 flex-col">
-          <div className="space-y-2">
-            <Button variant="outline" className="w-full">
-              <FcGoogle className="w-4 h-4 mr-2" />
-              Continue with Google
-            </Button>
-            <Button
-              variant="outline"
-              onClick={async () => {
-                await signInWithGithub();
-              }}
-              className="w-full"
-            >
-              <FaGithub className="w-4 h-4 mr-2" />
-              Continue with Github
-            </Button>
-          </div>
+          <SocialLogin />
 
           <p className="text-center text-sm">
             Don't have an account?{' '}
-            <Link href="/auth/signup" className="text-blue-500">
+            <Link href="/auth/signup" className="text-primary">
               Sign up
             </Link>
           </p>

@@ -1,22 +1,11 @@
 import authConfig from '#/lib/auth.config';
-import { db } from '#/lib/db/drizzle';
-import {
-  accounts,
-  sessions,
-  users,
-  verificationTokens,
-} from '#/lib/db/schemas';
+import { prisma } from '#/lib/prisma';
 
-import { DrizzleAdapter } from '@auth/drizzle-adapter';
+import { PrismaAdapter } from '@auth/prisma-adapter';
 import NextAuth from 'next-auth';
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  adapter: DrizzleAdapter(db, {
-    usersTable: users,
-    accountsTable: accounts,
-    sessionsTable: sessions,
-    verificationTokensTable: verificationTokens,
-  }),
-  session: { strategy: 'jwt' },
+  adapter: PrismaAdapter(prisma),
+  session: { strategy: 'jwt', maxAge: 7 * 24 * 60 * 60 },
   ...authConfig,
 });

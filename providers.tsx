@@ -21,8 +21,8 @@ function Providers({ children }: Props) {
       <Toaster position="bottom-center" />
       <TRPCProvider>{children}</TRPCProvider>
       <ProgressBar
-        height="4px"
-        color="#000"
+        height="3px"
+        color="#5d6eee"
         options={{ showSpinner: false }}
         shallowRouting
       />
