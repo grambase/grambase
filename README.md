@@ -12,6 +12,7 @@ The ultimate open-source platform to help you grow your business or community on
 </p>
 
 <p align="center"><a href="https://cloud.grambase.dev">Cloud (coming soon)</a> · <a href="https://t.me/grambase_dev">Telegram group</a></p>
+<p align="center"><a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgrambase%2Fgrambase&env=DATABASE_URL,AUTH_SECRET"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a></p>
 
 > [!NOTE]  
 > The project is still in development and not ready for production use. Feel free to contribute to the project by opening a pull request or an issue.
