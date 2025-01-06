@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>grambase</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5E6EEE" offset="0%"></stop>
+            <stop stop-color="#3649E9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="grambase" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(0, -1)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="512" height="512" rx="147"></rect>
+            <path d="M279.716481,108.799011 C283.916568,110.594557 286.343514,115.02616 285.592401,119.528271 L267.697292,226.800382 L355.090135,226.800382 C358.843717,226.800382 362.276242,228.918985 363.95485,232.272912 C365.631476,235.626839 365.270783,239.640504 363.017445,242.640208 L244.109185,401.040452 C241.36812,404.691578 236.483708,405.9964 232.283621,404.200537 C228.083534,402.406654 225.656588,397.973428 226.407701,393.472881 L244.30281,286.200077 L156.909174,286.200077 C153.155989,286.200077 149.724653,284.081474 148.046243,280.727547 C146.367635,277.37362 146.729914,273.359955 148.981864,270.360251 L267.890917,111.960739 C270.631982,108.309386 275.516394,107.003463 279.716481,108.799011 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
