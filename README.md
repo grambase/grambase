@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <a href="https://grambase.dev">
+    <img src="./public/logo.svg" width="80px" alt="Grambase Logo" />
+  </a>
+</p>
 
-## Getting Started
+<h3 align="center">
+  Grambase
+</h3>
+<p align="center">
+The ultimate open-source platform to help you grow your business or community on Telegram.
+</p>
 
-First, run the development server:
+<p align="center"><a href="https://cloud.grambase.dev">Cloud (coming soon)</a> · <a href="https://t.me/grambase_dev">Telegram group</a></p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> [!NOTE]  
+> The project is still in development and not ready for production use. Feel free to contribute to the project by opening a pull request or an issue.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Grambase is the ultimate open-source platform, offering everything you need from chat and channel moderation to seamless bot development, all in one place. It is designed to help you grow your business on Telegram by providing you with the tools you need to manage your community and automate your workflow.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+> Most of these features are still in development and not ready for production use.
 
-To learn more about Next.js, take a look at the following resources:
+- **Chat Moderation**: Keep your community safe and clean with powerful moderation tools.
+- **Channel Management**: Manage your channel with ease and keep your subscribers engaged.
+- **Bot Development**: Visually design custom bots for your business or community and automate your workflow.
+- **Analytics**: Track your growth and engagement with detailed analytics.
+- **Integrations**: Connect your favorite tools and services to Grambase and streamline your workflow.
+- **AI**: Connect your data to AI models and get insights to help you make better decisions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Community
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Join our [Telegram group](https://t.me/grambase_dev) to get the latest updates, ask questions, and share your feedback with the community.
